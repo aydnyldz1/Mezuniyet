@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Emir & Elif 💍</title>
+<title>Bebeğimizi Bekliyoruz 👶</title>
 
 <style>
 *{
@@ -19,18 +19,21 @@ html{
 
 body{
     font-family:Arial, Helvetica, sans-serif;
-    background:#080706;
-    color:#fff;
+    background:#fff8f4;
+    color:#4b3a35;
     overflow-x:hidden;
 }
 
 /* ANA ALAN */
 .hero{
     min-height:100svh;
+
     display:flex;
     align-items:center;
     justify-content:center;
+
     text-align:center;
+
     padding:35px 18px;
 
     position:relative;
@@ -39,64 +42,69 @@ body{
     background:
         radial-gradient(
             circle at 50% 0%,
-            #4a3218 0%,
-            #21170d 25%,
-            #0b0907 55%,
-            #000 100%
+            #ffe7df 0%,
+            #fff5ef 35%,
+            #fffaf7 70%,
+            #ffffff 100%
         );
 }
 
-/* IŞIKLAR */
+/* IŞIK EFEKTLERİ */
+
 .hero::before{
     content:"";
+
     position:absolute;
 
-    width:300px;
-    height:300px;
+    width:280px;
+    height:280px;
 
     border-radius:50%;
 
-    background:#d6b56a;
+    background:#f5b8a8;
 
-    filter:blur(130px);
+    filter:blur(100px);
 
-    opacity:.14;
+    opacity:.25;
 
-    top:-120px;
+    top:-100px;
     left:-100px;
 }
 
 .hero::after{
     content:"";
+
     position:absolute;
 
-    width:260px;
-    height:260px;
+    width:250px;
+    height:250px;
 
     border-radius:50%;
 
-    background:#d6b56a;
+    background:#e9c8a8;
 
-    filter:blur(130px);
+    filter:blur(100px);
 
-    opacity:.10;
+    opacity:.2;
 
-    right:-100px;
     bottom:-100px;
+    right:-100px;
 }
 
 /* KART */
+
 .card{
     width:100%;
-    max-width:510px;
+    max-width:500px;
 
     position:relative;
     z-index:2;
 }
 
-/* KALP */
-.rings{
-    font-size:62px;
+/* BEBEK */
+
+.baby{
+    font-size:72px;
 
     display:inline-block;
 
@@ -105,8 +113,8 @@ body{
 
     filter:
         drop-shadow(
-            0 8px 20px
-            rgba(214,181,106,.25)
+            0 8px 15px
+            rgba(180,120,100,.2)
         );
 }
 
@@ -117,16 +125,16 @@ body{
     }
 
     50%{
-        transform:translateY(-8px);
+        transform:translateY(-10px);
     }
-
 }
 
-/* ÜST YAZI */
-.small{
-    color:#d6b56a;
+/* ÜST BAŞLIK */
 
-    letter-spacing:4px;
+.small{
+    color:#c27d6d;
+
+    letter-spacing:3px;
 
     font-size:11px;
 
@@ -135,53 +143,27 @@ body{
     margin-top:15px;
 }
 
-/* İSİMLER */
-.names{
+/* ANA BAŞLIK */
+
+h1{
     font-family:
         Georgia,
         "Times New Roman",
         serif;
 
-    font-size:51px;
+    font-size:44px;
 
-    line-height:1.15;
+    line-height:1.2;
 
-    margin:16px 0;
+    margin:15px 0;
 
-    background:
-        linear-gradient(
-            90deg,
-            #fff,
-            #d6b56a,
-            #fff3c4,
-            #d6b56a,
-            #fff
-        );
-
-    -webkit-background-clip:text;
-
-    background-clip:text;
-
-    color:transparent;
-
-    background-size:250% auto;
-
-    animation:
-        goldText 5s linear infinite;
+    color:#7a5147;
 }
 
-@keyframes goldText{
+/* ALT BAŞLIK */
 
-    to{
-        background-position:
-            250% center;
-    }
-
-}
-
-/* ALT MESAJ */
 .subtitle{
-    color:#d4d0ca;
+    color:#806c66;
 
     font-family:Georgia, serif;
 
@@ -193,23 +175,47 @@ body{
 }
 
 /* AYRAÇ */
+
 .divider{
-    width:85px;
+    width:75px;
 
-    height:1px;
+    height:2px;
 
-    background:#d6b56a;
+    background:#d69a8b;
 
     margin:20px auto;
+}
+
+/* TARİH */
+
+.date{
+    display:inline-block;
+
+    padding:10px 20px;
+
+    border-radius:30px;
+
+    background:#fff;
+
+    border:1px solid #efd1c8;
+
+    color:#a96859;
+
+    font-size:14px;
+
+    font-weight:bold;
+
+    margin-bottom:20px;
 
     box-shadow:
-        0 0 15px
-        rgba(214,181,106,.5);
+        0 8px 25px
+        rgba(150,100,80,.08);
 }
 
 /* GERİ SAYIM */
+
 .countdown-title{
-    color:#999;
+    color:#a4867e;
 
     font-size:10px;
 
@@ -225,8 +231,7 @@ body{
 
     gap:7px;
 
-    margin:
-        10px 0 28px;
+    margin:10px 0 30px;
 }
 
 .time{
@@ -235,21 +240,23 @@ body{
     padding:12px 4px;
 
     background:
-        rgba(255,255,255,.035);
+        rgba(255,255,255,.8);
 
     border:
         1px solid
-        rgba(214,181,106,.3);
+        #efd1c8;
 
     border-radius:15px;
 
-    backdrop-filter:blur(10px);
+    box-shadow:
+        0 8px 20px
+        rgba(150,100,80,.06);
 }
 
 .time b{
     display:block;
 
-    color:#d6b56a;
+    color:#c27d6d;
 
     font-size:23px;
 
@@ -257,12 +264,13 @@ body{
 }
 
 .time small{
-    color:#999;
+    color:#a38b84;
 
     font-size:9px;
 }
 
-/* BİLGİLER */
+/* BİLGİ KUTULARI */
+
 .info{
     display:grid;
 
@@ -287,16 +295,18 @@ body{
 
     padding:14px 7px;
 
+    background:
+        rgba(255,255,255,.75);
+
     border:
         1px solid
-        rgba(214,181,106,.25);
-
-    background:
-        rgba(255,255,255,.035);
+        #efd1c8;
 
     border-radius:18px;
 
-    backdrop-filter:blur(10px);
+    box-shadow:
+        0 8px 20px
+        rgba(150,100,80,.05);
 }
 
 .icon{
@@ -306,7 +316,7 @@ body{
 }
 
 .box strong{
-    color:#d6b56a;
+    color:#b87465;
 
     font-size:12px;
 
@@ -314,53 +324,19 @@ body{
 }
 
 .box span{
-    color:#ddd;
+    color:#806c66;
 
     font-size:13px;
 
     line-height:1.35;
 }
 
-/* HARİTA */
-.map{
-    display:inline-flex;
+/* MESAJ */
 
-    align-items:center;
-
-    justify-content:center;
-
-    margin-top:20px;
-
-    padding:14px 25px;
-
-    border-radius:30px;
-
-    background:#d6b56a;
-
-    color:#0b0907;
-
-    text-decoration:none;
-
-    font-size:13px;
-
-    font-weight:bold;
-
-    box-shadow:
-        0 8px 25px
-        rgba(214,181,106,.12);
-
-    transition:.3s;
-}
-
-.map:active{
-    transform:scale(.96);
-}
-
-/* DAVET MESAJI */
 .message{
     margin-top:30px;
 
-    color:#ccc;
+    color:#806c66;
 
     font-family:Georgia, serif;
 
@@ -370,34 +346,31 @@ body{
 }
 
 /* ALT */
+
 .footer{
     margin-top:30px;
 
     padding-bottom:10px;
 
-    color:#777;
+    color:#a99690;
 
     font-size:12px;
 
     line-height:1.8;
 }
 
-/* ÇİÇEK / PARILTILAR */
-.sparkle{
+/* KALPLER */
+
+.heart{
     position:fixed;
 
-    width:4px;
-    height:4px;
-
-    border-radius:50%;
-
-    background:#d6b56a;
-
-    top:-10px;
+    top:-20px;
 
     z-index:20;
 
     pointer-events:none;
+
+    font-size:18px;
 
     animation:
         fall linear forwards;
@@ -410,32 +383,36 @@ body{
             translateY(0)
             rotate(0deg);
 
+        opacity:0;
+    }
+
+    15%{
         opacity:1;
     }
 
     100%{
         transform:
             translateY(110vh)
-            rotate(360deg);
+            rotate(25deg);
 
         opacity:0;
     }
-
 }
 
 /* MOBİL */
+
 @media(max-width:420px){
 
     .hero{
         padding:30px 14px;
     }
 
-    .names{
-        font-size:42px;
+    .baby{
+        font-size:62px;
     }
 
-    .rings{
-        font-size:55px;
+    h1{
+        font-size:38px;
     }
 
     .subtitle{
@@ -448,6 +425,7 @@ body{
 
     .time{
         width:62px;
+
         padding:10px 3px;
     }
 
@@ -458,13 +436,12 @@ body{
     .info{
         gap:7px;
     }
-
 }
 
 @media(max-width:350px){
 
-    .names{
-        font-size:36px;
+    h1{
+        font-size:33px;
     }
 
     .time{
@@ -474,7 +451,6 @@ body{
     .time b{
         font-size:18px;
     }
-
 }
 </style>
 </head>
@@ -485,43 +461,56 @@ body{
 
 <div class="card">
 
-    <!-- YÜZÜKLER -->
-    <div class="rings">
-        💍
+    <!-- BEBEK -->
+    <div class="baby">
+        👶
     </div>
+
 
     <!-- ÜST BAŞLIK -->
     <div class="small">
-        DÜĞÜN DAVETİYESİ
+        BİR MUCİZEYİ BEKLİYORUZ
     </div>
 
 
-    <!-- ÇİFT -->
-    <div class="names">
-        Emir & Elif
-    </div>
+    <!-- ANA BAŞLIK -->
+    <h1>
+        Bebeğimizi<br>
+        Bekliyoruz
+    </h1>
 
 
     <div class="divider"></div>
 
 
-    <!-- DAVET -->
+    <!-- ÇİFT -->
     <p class="subtitle">
 
-        Bir ömür boyu sürecek
-        hikâyemizin en güzel gününde
+        Elif & Emir
 
-        <br>
+        <br><br>
 
-        sizleri de yanımızda görmekten
-        mutluluk duyarız. ❤️
+        Hayatımızın en güzel
+        sürprizine kavuşacağımız
+        günü sabırsızlıkla bekliyoruz. 🤍
 
     </p>
 
 
+    <!-- TAHMİNİ TARİH -->
+
+    <div class="date">
+
+        🍼 Tahmini Doğum:
+        15 Aralık 2026
+
+    </div>
+
+
     <!-- GERİ SAYIM -->
+
     <div class="countdown-title">
-        MUTLULUĞUMUZA KALAN SÜRE
+        BEBEĞİMİZİ KUCAĞIMIZA ALMAYA KALAN SÜRE
     </div>
 
 
@@ -551,21 +540,22 @@ body{
 
 
     <!-- BİLGİLER -->
+
     <div class="info">
 
 
         <div class="box">
 
             <div class="icon">
-                📅
+                🤰
             </div>
 
             <strong>
-                TARİH
+                ANNE
             </strong>
 
             <span>
-                26 Eylül 2026
+                Selenay
             </span>
 
         </div>
@@ -574,15 +564,15 @@ body{
         <div class="box">
 
             <div class="icon">
-                ⏰
+                👨‍🍼
             </div>
 
             <strong>
-                SAAT
+                BABA
             </strong>
 
             <span>
-                19:00
+                Hasan
             </span>
 
         </div>
@@ -591,15 +581,15 @@ body{
         <div class="box">
 
             <div class="icon">
-                📍
+                🍼
             </div>
 
             <strong>
-                DÜĞÜN YERİ
+                TAHMİNİ TARİH
             </strong>
 
             <span>
-                Ordu Garden Davet
+                15 Aralık 2026
             </span>
 
         </div>
@@ -608,64 +598,54 @@ body{
         <div class="box">
 
             <div class="icon">
-                💃
+                ❤️
             </div>
 
             <strong>
-                KONSEPT
+                DURUM
             </strong>
 
             <span>
-                Düğün & Eğlence
+                Seni bekliyoruz
             </span>
 
         </div>
-
 
     </div>
 
 
-    <!-- HARİTA -->
-    <a
-        class="map"
-        href="https://www.google.com/maps/search/?api=1&query=Ordu+Garden+Davet"
-        target="_blank"
-        rel="noopener"
-    >
-        📍 Düğün Yerini Gör
-    </a>
-
-
     <!-- MESAJ -->
+
     <p class="message">
 
-        Sevgiyle başlayan hikâyemizi
-        mutlulukla taçlandıracağımız
-        bu özel günümüzde
+        Minik kalbimizin ilk atışından
+        beri hayatımız tamamen değişti.
 
         <br><br>
 
-        sizleri de aramızda görmek
-        bizleri çok mutlu edecektir.
+        Şimdi tek bir dileğimiz var:
+
+        <br>
+
+        Sağlıkla seni kucağımıza almak. 🤍
 
         <br><br>
 
-        Birlikte gülmek,
-        birlikte eğlenmek
-        ve bu güzel günü
-        birlikte hatırlamak dileğiyle... 🥂
+        Seni daha görmeden çok seviyoruz,
+        minik mucizemiz. 🍼✨
 
     </p>
 
 
     <!-- FOOTER -->
+
     <div class="footer">
 
-        💍 Emir & Elif
+        👶 Selenay & Hasan
 
         <br>
 
-        Bir ömür boyu mutlulukla... ❤️
+        Ailemize hoş geldin minik mucizemiz 🤍
 
     </div>
 
@@ -677,20 +657,12 @@ body{
 <script>
 
 /* =====================================
-   DÜĞÜN TARİHİ
+   TAHMİNİ DOĞUM TARİHİ
    ===================================== */
-
-/*
-   TARİHİ BURADAN DEĞİŞTİREBİLİRSİN.
-
-   ÖRNEK:
-   26 Eylül 2026
-   Saat: 19:00
-*/
 
 const targetDate =
     new Date(
-        "September 26, 2026 19:00:00"
+        "December 15, 2026 00:00:00"
     ).getTime();
 
 
@@ -829,52 +801,54 @@ countdown();
 
 
 /* =====================================
-   PARILTI EFEKTİ
+   UÇUŞAN KALPLER
    ===================================== */
 
-function createSparkle(){
+function createHeart(){
 
-    const sparkle =
+    const heart =
         document.createElement(
             "div"
         );
 
 
-    sparkle.className =
-        "sparkle";
+    heart.className =
+        "heart";
 
 
-    /* YATAY KONUM */
+    /* KALP */
 
-    sparkle.style.left =
+    heart.innerHTML =
+        Math.random() > .5
+        ? "🤍"
+        : "🩷";
+
+
+    /* KONUM */
+
+    heart.style.left =
         Math.random() * 100 +
         "vw";
 
 
-    /* RASTGELE BOYUT */
+    /* BOYUT */
 
-    const size =
-        Math.random() * 4 + 2;
-
-    sparkle.style.width =
-        size + "px";
-
-    sparkle.style.height =
-        size + "px";
-
-
-    /* RASTGELE HIZ */
-
-    sparkle.style.animationDuration =
+    heart.style.fontSize =
         (
-            Math.random() * 4 + 4
+            Math.random() * 12 + 12
+        ) + "px";
+
+
+    /* HIZ */
+
+    heart.style.animationDuration =
+        (
+            Math.random() * 5 + 5
         ) + "s";
 
 
-    /* EKLE */
-
     document.body.appendChild(
-        sparkle
+        heart
     );
 
 
@@ -882,19 +856,19 @@ function createSparkle(){
 
     setTimeout(
         () => {
-            sparkle.remove();
+            heart.remove();
         },
-        8000
+        10000
     );
 
 }
 
 
-/* PARILTILARI ÜRET */
+/* KALPLER */
 
 setInterval(
-    createSparkle,
-    300
+    createHeart,
+    500
 );
 
 </script>
