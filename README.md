@@ -3,9 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#080808">
 
-<title>Emir'in Mezuniyet Partisi 🎓</title>
+<title>Emir & Elif 💍</title>
 
 <style>
 *{
@@ -20,7 +19,7 @@ html{
 
 body{
     font-family:Arial, Helvetica, sans-serif;
-    background:#080808;
+    background:#080706;
     color:#fff;
     overflow-x:hidden;
 }
@@ -33,243 +32,322 @@ body{
     justify-content:center;
     text-align:center;
     padding:35px 18px;
+
     position:relative;
     overflow:hidden;
 
     background:
         radial-gradient(
             circle at 50% 0%,
-            #3b300d 0%,
-            #171205 25%,
-            #080808 55%,
+            #4a3218 0%,
+            #21170d 25%,
+            #0b0907 55%,
             #000 100%
         );
 }
 
-/* IŞIK EFEKTLERİ */
+/* IŞIKLAR */
 .hero::before{
     content:"";
     position:absolute;
-    width:280px;
-    height:280px;
+
+    width:300px;
+    height:300px;
+
     border-radius:50%;
-    background:#d4af37;
-    filter:blur(120px);
-    opacity:.15;
-    top:-100px;
+
+    background:#d6b56a;
+
+    filter:blur(130px);
+
+    opacity:.14;
+
+    top:-120px;
     left:-100px;
 }
 
 .hero::after{
     content:"";
     position:absolute;
-    width:250px;
-    height:250px;
+
+    width:260px;
+    height:260px;
+
     border-radius:50%;
-    background:#d4af37;
-    filter:blur(120px);
+
+    background:#d6b56a;
+
+    filter:blur(130px);
+
     opacity:.10;
-    bottom:-100px;
+
     right:-100px;
+    bottom:-100px;
 }
 
 /* KART */
 .card{
     width:100%;
-    max-width:500px;
+    max-width:510px;
+
     position:relative;
     z-index:2;
 }
 
-/* KEPLİ EMOJI */
-.cap{
-    font-size:76px;
+/* KALP */
+.rings{
+    font-size:62px;
+
     display:inline-block;
-    animation:float 3s ease-in-out infinite;
-    filter:drop-shadow(0 10px 20px rgba(212,175,55,.2));
+
+    animation:
+        float 3s ease-in-out infinite;
+
+    filter:
+        drop-shadow(
+            0 8px 20px
+            rgba(214,181,106,.25)
+        );
 }
 
 @keyframes float{
 
     0%,100%{
-        transform:translateY(0) rotate(0deg);
+        transform:translateY(0);
     }
 
     50%{
-        transform:translateY(-10px) rotate(-3deg);
+        transform:translateY(-8px);
     }
+
 }
 
-/* ÜST BAŞLIK */
+/* ÜST YAZI */
 .small{
-    color:#d4af37;
+    color:#d6b56a;
+
     letter-spacing:4px;
-    font-size:12px;
+
+    font-size:11px;
+
     font-weight:bold;
+
     margin-top:15px;
 }
 
-/* İSİM */
-h1{
-    font-family:Georgia, "Times New Roman", serif;
-    font-size:52px;
-    line-height:1.1;
-    margin:15px 0 8px;
+/* İSİMLER */
+.names{
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:51px;
+
+    line-height:1.15;
+
+    margin:16px 0;
 
     background:
         linear-gradient(
             90deg,
-            #ffffff,
-            #d4af37,
-            #fff2a8,
-            #d4af37,
-            #ffffff
+            #fff,
+            #d6b56a,
+            #fff3c4,
+            #d6b56a,
+            #fff
         );
 
     -webkit-background-clip:text;
+
     background-clip:text;
+
     color:transparent;
 
     background-size:250% auto;
-    animation:goldText 5s linear infinite;
+
+    animation:
+        goldText 5s linear infinite;
 }
 
 @keyframes goldText{
+
     to{
-        background-position:250% center;
+        background-position:
+            250% center;
     }
+
 }
 
+/* ALT MESAJ */
 .subtitle{
-    color:#ccc;
+    color:#d4d0ca;
+
+    font-family:Georgia, serif;
+
     font-size:16px;
-    line-height:1.6;
+
+    line-height:1.7;
+
     margin-bottom:25px;
 }
 
 /* AYRAÇ */
 .divider{
-    width:80px;
-    height:2px;
-    background:#d4af37;
+    width:85px;
+
+    height:1px;
+
+    background:#d6b56a;
+
     margin:20px auto;
-    box-shadow:0 0 15px rgba(212,175,55,.5);
+
+    box-shadow:
+        0 0 15px
+        rgba(214,181,106,.5);
 }
 
 /* GERİ SAYIM */
 .countdown-title{
-    color:#aaa;
-    font-size:12px;
+    color:#999;
+
+    font-size:10px;
+
     letter-spacing:2px;
+
     margin-bottom:10px;
 }
 
 .countdown{
     display:flex;
+
     justify-content:center;
-    gap:8px;
-    margin:10px 0 28px;
+
+    gap:7px;
+
+    margin:
+        10px 0 28px;
 }
 
 .time{
     width:68px;
-    min-width:0;
-    padding:12px 5px;
+
+    padding:12px 4px;
 
     background:
-        linear-gradient(
-            145deg,
-            rgba(255,255,255,.07),
-            rgba(255,255,255,.02)
-        );
+        rgba(255,255,255,.035);
 
-    border:1px solid rgba(212,175,55,.35);
-    border-radius:14px;
+    border:
+        1px solid
+        rgba(214,181,106,.3);
 
-    box-shadow:
-        inset 0 0 20px rgba(212,175,55,.03),
-        0 8px 25px rgba(0,0,0,.3);
+    border-radius:15px;
+
+    backdrop-filter:blur(10px);
 }
 
 .time b{
     display:block;
-    color:#d4af37;
-    font-size:24px;
+
+    color:#d6b56a;
+
+    font-size:23px;
+
     line-height:1.2;
 }
 
 .time small{
     color:#999;
-    font-size:10px;
+
+    font-size:9px;
 }
 
-/* BİLGİ KUTULARI */
+/* BİLGİLER */
 .info{
     display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:10px;
-    margin-top:10px;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:9px;
+
+    margin-top:5px;
 }
 
 .box{
     min-height:105px;
+
     display:flex;
+
     flex-direction:column;
+
     align-items:center;
+
     justify-content:center;
 
-    border:1px solid rgba(212,175,55,.3);
+    padding:14px 7px;
+
+    border:
+        1px solid
+        rgba(214,181,106,.25);
 
     background:
-        linear-gradient(
-            145deg,
-            rgba(255,255,255,.055),
-            rgba(255,255,255,.015)
-        );
+        rgba(255,255,255,.035);
 
     border-radius:18px;
-    padding:15px 8px;
 
     backdrop-filter:blur(10px);
 }
 
 .icon{
-    font-size:27px;
-    margin-bottom:8px;
+    font-size:25px;
+
+    margin-bottom:7px;
 }
 
 .box strong{
-    color:#d4af37;
-    font-size:13px;
+    color:#d6b56a;
+
+    font-size:12px;
+
     margin-bottom:5px;
 }
 
 .box span{
     color:#ddd;
+
     font-size:13px;
-    line-height:1.3;
+
+    line-height:1.35;
 }
 
-/* KONUM BUTONU */
+/* HARİTA */
 .map{
     display:inline-flex;
+
     align-items:center;
+
     justify-content:center;
 
     margin-top:20px;
+
     padding:14px 25px;
 
     border-radius:30px;
 
-    background:#d4af37;
-    color:#080808;
+    background:#d6b56a;
+
+    color:#0b0907;
 
     text-decoration:none;
-    font-size:14px;
+
+    font-size:13px;
+
     font-weight:bold;
 
     box-shadow:
-        0 8px 25px rgba(212,175,55,.15);
+        0 8px 25px
+        rgba(214,181,106,.12);
 
     transition:.3s;
 }
@@ -278,39 +356,51 @@ h1{
     transform:scale(.96);
 }
 
-/* MESAJ */
+/* DAVET MESAJI */
 .message{
     margin-top:30px;
+
     color:#ccc;
+
     font-family:Georgia, serif;
+
     font-size:15px;
-    line-height:1.8;
+
+    line-height:1.9;
 }
 
-/* ALT YAZI */
+/* ALT */
 .footer{
     margin-top:30px;
+
     padding-bottom:10px;
 
     color:#777;
+
     font-size:12px;
-    line-height:1.7;
+
+    line-height:1.8;
 }
 
-/* KONFETİ */
-.confetti{
+/* ÇİÇEK / PARILTILAR */
+.sparkle{
     position:fixed;
 
-    width:7px;
-    height:7px;
+    width:4px;
+    height:4px;
 
-    top:-15px;
+    border-radius:50%;
+
+    background:#d6b56a;
+
+    top:-10px;
 
     z-index:20;
 
     pointer-events:none;
 
-    animation:fall linear forwards;
+    animation:
+        fall linear forwards;
 }
 
 @keyframes fall{
@@ -319,13 +409,18 @@ h1{
         transform:
             translateY(0)
             rotate(0deg);
+
+        opacity:1;
     }
 
     100%{
         transform:
             translateY(110vh)
-            rotate(720deg);
+            rotate(360deg);
+
+        opacity:0;
     }
+
 }
 
 /* MOBİL */
@@ -335,48 +430,40 @@ h1{
         padding:30px 14px;
     }
 
-    h1{
+    .names{
         font-size:42px;
     }
 
-    .cap{
-        font-size:65px;
-    }
-
-    .small{
-        font-size:11px;
-        letter-spacing:3px;
+    .rings{
+        font-size:55px;
     }
 
     .subtitle{
-        font-size:15px;
+        font-size:14px;
     }
 
     .countdown{
-        gap:6px;
+        gap:5px;
     }
 
     .time{
         width:62px;
-        padding:10px 4px;
+        padding:10px 3px;
     }
 
     .time b{
-        font-size:21px;
+        font-size:20px;
     }
 
     .info{
-        gap:8px;
+        gap:7px;
     }
 
-    .box{
-        min-height:100px;
-    }
 }
 
 @media(max-width:350px){
 
-    h1{
+    .names{
         font-size:36px;
     }
 
@@ -385,8 +472,9 @@ h1{
     }
 
     .time b{
-        font-size:19px;
+        font-size:18px;
     }
+
 }
 </style>
 </head>
@@ -397,33 +485,46 @@ h1{
 
 <div class="card">
 
-    <!-- KEPT -->
-    <div class="cap">🎓</div>
-
-    <div class="small">
-        MEZUNİYET PARTİSİ
+    <!-- YÜZÜKLER -->
+    <div class="rings">
+        💍
     </div>
 
-    <!-- İSİM -->
-    <h1>
-        Emir Yılmaz
-    </h1>
+    <!-- ÜST BAŞLIK -->
+    <div class="small">
+        DÜĞÜN DAVETİYESİ
+    </div>
+
+
+    <!-- ÇİFT -->
+    <div class="names">
+        Emir & Elif
+    </div>
+
 
     <div class="divider"></div>
 
+
+    <!-- DAVET -->
     <p class="subtitle">
-        Bir dönemin sonu,<br>
-        yepyeni bir başlangıç! ✨
+
+        Bir ömür boyu sürecek
+        hikâyemizin en güzel gününde
+
+        <br>
+
+        sizleri de yanımızda görmekten
+        mutluluk duyarız. ❤️
+
     </p>
 
 
-    <!-- GERİ SAYIM BAŞLIK -->
+    <!-- GERİ SAYIM -->
     <div class="countdown-title">
-        BÜYÜK GÜNE KALAN SÜRE
+        MUTLULUĞUMUZA KALAN SÜRE
     </div>
 
 
-    <!-- GERİ SAYIM -->
     <div class="countdown">
 
         <div class="time">
@@ -449,8 +550,9 @@ h1{
     </div>
 
 
-    <!-- ETKİNLİK BİLGİLERİ -->
+    <!-- BİLGİLER -->
     <div class="info">
+
 
         <div class="box">
 
@@ -463,7 +565,7 @@ h1{
             </strong>
 
             <span>
-                20 Haziran 2027
+                26 Eylül 2026
             </span>
 
         </div>
@@ -493,7 +595,7 @@ h1{
             </div>
 
             <strong>
-                MEKÂN
+                DÜĞÜN YERİ
             </strong>
 
             <span>
@@ -506,18 +608,19 @@ h1{
         <div class="box">
 
             <div class="icon">
-                👔
+                💃
             </div>
 
             <strong>
-                KIYAFET
+                KONSEPT
             </strong>
 
             <span>
-                Şık & Rahat
+                Düğün & Eğlence
             </span>
 
         </div>
+
 
     </div>
 
@@ -529,23 +632,28 @@ h1{
         target="_blank"
         rel="noopener"
     >
-        📍 Konumu Gör
+        📍 Düğün Yerini Gör
     </a>
 
 
-    <!-- DAVET MESAJI -->
+    <!-- MESAJ -->
     <p class="message">
 
-        Yıllarca süren emeğin ardından
-        bu özel günü birlikte kutlamak
-        için seni de mezuniyet partime
-        bekliyorum. 🎓✨
+        Sevgiyle başlayan hikâyemizi
+        mutlulukla taçlandıracağımız
+        bu özel günümüzde
 
         <br><br>
 
-        Bu güzel gecede birlikte eğlenelim,
-        fotoğraflar çekilelim ve unutulmaz
-        anılar biriktirelim! 🥂
+        sizleri de aramızda görmek
+        bizleri çok mutlu edecektir.
+
+        <br><br>
+
+        Birlikte gülmek,
+        birlikte eğlenmek
+        ve bu güzel günü
+        birlikte hatırlamak dileğiyle... 🥂
 
     </p>
 
@@ -553,11 +661,11 @@ h1{
     <!-- FOOTER -->
     <div class="footer">
 
-        🎓 Emir'in Mezuniyet Partisi
+        💍 Emir & Elif
 
         <br>
 
-        Seni aramızda görmek dileğiyle ❤️
+        Bir ömür boyu mutlulukla... ❤️
 
     </div>
 
@@ -569,19 +677,24 @@ h1{
 <script>
 
 /* =====================================
-   GERİ SAYIM
+   DÜĞÜN TARİHİ
    ===================================== */
 
 /*
-   BURADAN TARİHİ DEĞİŞTİREBİLİRSİN.
+   TARİHİ BURADAN DEĞİŞTİREBİLİRSİN.
 
-   Örnek:
-   20 Haziran 2027 - 19:00
+   ÖRNEK:
+   26 Eylül 2026
+   Saat: 19:00
 */
 
 const targetDate =
-    new Date("June 20, 2027 19:00:00").getTime();
+    new Date(
+        "September 26, 2026 19:00:00"
+    ).getTime();
 
+
+/* GERİ SAYIM */
 
 function countdown(){
 
@@ -592,23 +705,31 @@ function countdown(){
         targetDate - now;
 
 
-    /* TARİH GEÇTİYSE */
+    /* TARİH GELDİYSE */
 
     if(distance <= 0){
 
-        document.getElementById("days").innerHTML = "00";
+        document.getElementById(
+            "days"
+        ).innerHTML = "00";
 
-        document.getElementById("hours").innerHTML = "00";
+        document.getElementById(
+            "hours"
+        ).innerHTML = "00";
 
-        document.getElementById("minutes").innerHTML = "00";
+        document.getElementById(
+            "minutes"
+        ).innerHTML = "00";
 
-        document.getElementById("seconds").innerHTML = "00";
+        document.getElementById(
+            "seconds"
+        ).innerHTML = "00";
 
         return;
     }
 
 
-    /* HESAPLAMA */
+    /* GÜN */
 
     const days =
         Math.floor(
@@ -617,54 +738,86 @@ function countdown(){
         );
 
 
+    /* SAAT */
+
     const hours =
         Math.floor(
-            (distance %
-            (1000 * 60 * 60 * 24))
+            (
+                distance %
+                (1000 * 60 * 60 * 24)
+            )
             /
             (1000 * 60 * 60)
         );
 
 
+    /* DAKİKA */
+
     const minutes =
         Math.floor(
-            (distance %
-            (1000 * 60 * 60))
+            (
+                distance %
+                (1000 * 60 * 60)
+            )
             /
             (1000 * 60)
         );
 
 
+    /* SANİYE */
+
     const seconds =
         Math.floor(
-            (distance %
-            (1000 * 60))
+            (
+                distance %
+                (1000 * 60)
+            )
             /
             1000
         );
 
 
-    /* EKRANA YAZDIR */
+    /* EKRANA YAZ */
 
-    document.getElementById("days").innerHTML =
-        String(days).padStart(2,"0");
-
-
-    document.getElementById("hours").innerHTML =
-        String(hours).padStart(2,"0");
-
-
-    document.getElementById("minutes").innerHTML =
-        String(minutes).padStart(2,"0");
+    document.getElementById(
+        "days"
+    ).innerHTML =
+        String(days).padStart(
+            2,
+            "0"
+        );
 
 
-    document.getElementById("seconds").innerHTML =
-        String(seconds).padStart(2,"0");
+    document.getElementById(
+        "hours"
+    ).innerHTML =
+        String(hours).padStart(
+            2,
+            "0"
+        );
+
+
+    document.getElementById(
+        "minutes"
+    ).innerHTML =
+        String(minutes).padStart(
+            2,
+            "0"
+        );
+
+
+    document.getElementById(
+        "seconds"
+    ).innerHTML =
+        String(seconds).padStart(
+            2,
+            "0"
+        );
 
 }
 
 
-/* HER SANİYE GÜNCELLE */
+/* HER SANİYE */
 
 setInterval(
     countdown,
@@ -676,60 +829,52 @@ countdown();
 
 
 /* =====================================
-   KONFETİ
+   PARILTI EFEKTİ
    ===================================== */
 
-function createConfetti(){
+function createSparkle(){
 
-    const confetti =
-        document.createElement("div");
-
-
-    confetti.className =
-        "confetti";
+    const sparkle =
+        document.createElement(
+            "div"
+        );
 
 
-    /* RASTGELE KONUM */
-
-    confetti.style.left =
-        Math.random() * 100 + "vw";
+    sparkle.className =
+        "sparkle";
 
 
-    /* ALTIN / BEYAZ TONLARI */
+    /* YATAY KONUM */
 
-    const colors = [
-
-        "#d4af37",
-        "#ffffff",
-        "#f5d76e",
-        "#b8860b"
-
-    ];
+    sparkle.style.left =
+        Math.random() * 100 +
+        "vw";
 
 
-    confetti.style.background =
-        colors[
-            Math.floor(
-                Math.random() *
-                colors.length
-            )
-        ];
+    /* RASTGELE BOYUT */
+
+    const size =
+        Math.random() * 4 + 2;
+
+    sparkle.style.width =
+        size + "px";
+
+    sparkle.style.height =
+        size + "px";
 
 
     /* RASTGELE HIZ */
 
-    confetti.style.animationDuration =
-        (Math.random() * 3 + 3) + "s";
+    sparkle.style.animationDuration =
+        (
+            Math.random() * 4 + 4
+        ) + "s";
 
 
-    /* RASTGELE ŞEFFAFLIK */
-
-    confetti.style.opacity =
-        Math.random() * .8 + .2;
-
+    /* EKLE */
 
     document.body.appendChild(
-        confetti
+        sparkle
     );
 
 
@@ -737,21 +882,19 @@ function createConfetti(){
 
     setTimeout(
         () => {
-
-            confetti.remove();
-
+            sparkle.remove();
         },
-        6000
+        8000
     );
 
 }
 
 
-/* KONFETİ ÜRET */
+/* PARILTILARI ÜRET */
 
 setInterval(
-    createConfetti,
-    180
+    createSparkle,
+    300
 );
 
 </script>
